@@ -780,4 +780,28 @@
 	#tickets .price-text {
 		font-size: 35px;
 	}
+	.gallery-phone .gallery-text-gutter {
+    margin: 25px 0;
+  }
+  .gallery-phone .gallery-text{
+    font-size: 30px;
+  }
+  .gallery-phone .gallery-gutter-bottom {
+    margin-bottom: 5px;
+  }
+  .gallery-phone .gallery-gutter-bottom div:nth-of-type(1) {
+    padding: 0 0 0 5px;
+  }
+  .gallery-phone .gallery-gutter-bottom div:nth-of-type(2) {
+    padding: 0 5px;
+  }
+  .gallery-phone .gallery-gutter-bottom div:nth-of-type(3) {
+    padding: 0 5px 0 0;
+  }
+  .img-responsive {
+    height: 115px;
+  }
+  footer .contactus {
+    min-height: 230px;
+  }
 }
