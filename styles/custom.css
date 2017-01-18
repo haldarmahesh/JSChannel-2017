@@ -1,348 +1,303 @@
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
 .visible {
-	display: none !important;
+  display: none !important;
 }
 
 .img-responsive {
-	min-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
 }
+
 
 /* Navbar Section */
+
 .navbar {
-    height: 100px;
-	position: absolute;
-	width: 100%;
-    background-color: transparent;
-    border-color: transparent;
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  border-color: transparent;
 }
+
 .navbar-collapse {
-    margin-top: 44px;
-    line-height: 36px;
+  margin-top: 44px;
+  line-height: 36px;
 }
+
 .navbar-collapse a {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    text-align: center;
-    color: #ffd527 !important;
-    vertical-align: middle;
-	line-height: 10px !important;
-    margin-left: 25px;
-}
-
-@media screen and (max-width: 767px) {
-	.navbar .nav {
-		background: #ffd527;
-	}
-
-	.navbar-collapse a {
-		color: #ffffff !important;
-	}
-
-	.jschannel-logo{
-		margin-top: 0px !important;
-    	margin-left: -15px;
-		display: block;
-		max-width: 100%;
-		height: auto;
-	}
-
-	.details-phone .details-phone-row {
-		margin-bottom: 90px;
-		text-align: center;
-	}
-
-	.details-phone .phone-ico {
-		margin-bottom: 20px;
-	}
-}
-
-@media screen and (max-width: 992px) {
-	.navbar-collapse a {
-		margin-left: 0px;
-	}
-}
-
-@media screen and (min-width: 767px) {
-	.button-buy-ticket span {
-		width: 83px;
-		height: 17px;
-		font-family: 'Fjalla One', sans-serif;
-		font-size: 18px;
-		font-weight: normal;
-		font-style: normal;
-		font-stretch: normal;
-		text-align: left;
-		color: #231f20;
-	}
-	.button-buy-ticket {
-		width: 135px;
-		height: 36px;
-		border-radius: 4px;
-		background-color: #ffd527;
-	}
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffd527 !important;
+  vertical-align: middle;
+  line-height: 10px !important;
+  margin-left: 25px;
 }
 
 .navbar-default .navbar-nav>li>a.button-buy-ticket:hover {
-	background-color: #ffd527;
+  background-color: #ffd527;
 }
 
+
 /* Jumbotron Section */
-@media screen and (max-width: 992px) {
-	.jumbotron {
-		margin-bottom: 0px;
-	}
-}
 
 .jumbotron {
   background: url(../assets/landing-image.jpg) center / cover no-repeat;
   padding-top: 0px;
-  height: 100vh;
+	min-height: 85vh;
 }
 
-.jschannel-logo{
-    margin-top: 140px;
+.jschannel-logo {
+  margin-top: 140px;
 }
 
 .cfp {
-	width: 190px;
-	height: 48px;
-	border-radius: 4px;
-	border: solid 1px #ffd31d;
-    line-height: 48px;
-    text-align: center;
-    margin-top: 90px;
+  width: 190px;
+  height: 48px;
+  border-radius: 4px;
+  border: solid 1px #ffd31d;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 90px;
 }
 
 .cfp span {
-    width: 124px;
-	height: 25px;
-	font-family: 'Fjalla One', sans-serif;
-	font-size: 28px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: left;
-	color: #ffd41d;
-    vertical-align: middle;
+  width: 124px;
+  height: 25px;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  color: #ffd41d;
+  vertical-align: middle;
 }
 
 .jumbotron .recap {
-    margin-top: 39px;
+  margin-top: 39px;
 }
 
 .jumbotron .sponser {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .details-phone {
-	min-height: 800px;
-	background-color: black;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: condensed;
-	text-align: left;
-	color: #ffd527;
-	padding-top: 100px;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+  text-align: left;
+  color: #ffd527;
+  padding: 50px 20px;
 }
 
 .details-phone .details-phone-row {
-	margin-bottom: 90px;
+  margin-bottom: 50px;
+	height: 100px;
 }
 
 .details-phone .phone-ico {
-	line-height: 84px;
-	height: 84px;
+  padding: 0;
+	height: inherit;
+}
+
+.details-phone .detail-row {
+	padding: 0;
 }
 
 .details-phone .phone-ico img {
-	height: 100%;
+  height: 80%;
+	margin: 0 auto;
 }
 
 .details-phone .block {
-    display: inline-block;
-    margin-left: 5px;
-    vertical-align: middle;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 .details-phone .title {
-	color: #ffffff;
+  color: #ffffff;
 }
 
 .jumbotron .details {
-    margin-top: 82px;
-    /*width: 92px;*/
-	height: 37px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: condensed;
-	line-height: 1.31;
-	text-align: left;
-	color: #ffd527;
+  margin-top: 82px;
+  /*width: 92px;*/
+  height: 37px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+  line-height: 1.31;
+  text-align: left;
+  color: #ffd527;
 }
 
 .jumbotron .details .title {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .jumbotron .details .block {
-    display: inline-block;
-    margin-left: 5px;
-    vertical-align: middle;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 .jumbotron .recap-2016, .jumbotron .become-a-sponser {
-	width: 81px;
-	height: 15px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	letter-spacing: -0.3px;
-	text-align: left;
-	color: #ffd41d;
+  width: 81px;
+  height: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #ffd41d;
 }
+
 
 /* Tickets Section */
 
 .tickets {
-	min-height: 650px;
-	background-image: url(../assets/ticket-b-g.png);
-    background-size: 100% 650px;
+  min-height: 650px;
+  background-image: url(../assets/ticket-b-g.png);
+  background-size: 100% 650px;
 }
 
 .tickets .buy-tickets-col {
-	text-align: center;
-    margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .tickets .buy-tickets {
-	width: 269px;
-	height: 36px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 48px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: center;
-	color: #000000;
+  width: 269px;
+  height: 36px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #000000;
 }
 
 .tickets .tickets-types-col {
-	text-align: center;
-    margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .tickets .text {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 2.06;
-	letter-spacing: -0.4px;
-	text-align: center;
-	color: #ffffff;
-	margin-bottom: 38px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.06;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 38px;
 }
 
 .tickets .price-box {
-	width: 230px;
-    height: 107px;
-	margin-top: 38px;
-	margin: 0 auto;
-    background-image: url(../assets/img-ticket.png);
-    background-size: 230px 107px;
-	line-height: 107px;
+  width: 230px;
+  height: 107px;
+  margin-top: 38px;
+  margin: 0 auto;
+  background-image: url(../assets/img-ticket.png);
+  background-size: 230px 107px;
+  line-height: 107px;
 }
 
 .tickets .price-text {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 47px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 3.36;
-    text-align: center;
-    color: #000000;
-    line-height: normal;
-    vertical-align: middle;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 47px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.36;
+  text-align: center;
+  color: #000000;
+  line-height: normal;
+  vertical-align: middle;
 }
 
 .tickets .price-btn {
-	width: 135px;
-	height: 36px;
-	border-radius: 4px;
-	background-color: #ff6c00;
-	margin-top: 60px;
+  width: 135px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #ff6c00;
+  margin-top: 60px;
 }
 
 .tickets .price-btn span {
-	width: 63px;
-	height: 17px;
-	font-family: 'Fjalla One', sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: center;
-	color: #ffffff;
+  width: 63px;
+  height: 17px;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
 }
 
 .tickets .few-seats {
-	width: 231px;
-	height: 15px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	font-style: italic;
-	font-stretch: normal;
-	line-height: 2.64;
-	text-align: center;
-	color: #000000;
+  width: 231px;
+  height: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 2.64;
+  text-align: center;
+  color: #000000;
 }
 
+
 /* Gallery */
+
 .gallery {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 .gallery .gallery-gutter-bottom, .gallery-phone .gallery-gutter-bottom {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .gallery .gallery-gutter-top, .gallery-phone .gallery-gutter-top {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 .gallery .img-height-400 {
-	height: 410px;
+  height: 410px;
 }
 
 .gallery .img-height-190 {
-	height: 190px;
+  height: 190px;
 }
 
 .gallery .gallery-text, .gallery-phone .gallery-text {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 48px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: center;
-	color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #000000;
 }
 
 .gallery-phone .gallery-text-gutter {
@@ -355,368 +310,439 @@
 }
 
 .gallery .small-image-container {
-	width: 190px;
-	height: 400px;
-	display: inline-block;
-	margin-left: 20px;
-	line-height: normal;
-    vertical-align: middle;
+  width: 190px;
+  height: 400px;
+  display: inline-block;
+  margin-left: 20px;
+  line-height: normal;
+  vertical-align: middle;
 }
 
 .gallery .big-image {
-	height: 400px;
-	width: 400px;
-	display: inline-block;
-	line-height: normal;
-    vertical-align: middle;
+  height: 400px;
+  width: 400px;
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
 }
 
 .gallery .small-image {
-	height: 190px;
-	width: 190px;
+  height: 190px;
+  width: 190px;
 }
 
 .gallery .small-image.bottom {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .gallery .small-image.single-line {
-	display: inline-block;
-	margin-top: 20px;
-	margin-left: 10px;
-    margin-right: 10px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.gallery .view_full{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: -0.3px;
-    text-align: left;
-    color: #ff6c00;
-    margin-top: 20px;
+.gallery .view_full {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #ff6c00;
+  margin-top: 20px;
 }
 
-.gallery-phone .view_full{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: -0.3px;
-    text-align: left;
-    color: #ff6c00;
-    margin-top: 20px;
+.gallery-phone .view_full {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #ff6c00;
+  margin-top: 20px;
 }
+
 
 /* Hackathon */
+
 .hackathon {
-	min-height: 200px;
+  min-height: 200px;
 }
 
 .hackathon .title-gutter {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
 .hackathon .title {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 24px;
-	font-weight: 600;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: center;
-	color: #808285;
-	text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #808285;
+  text-transform: uppercase;
 }
 
 .hackathon .sponsored-gutter {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 .hackathon .sponsored {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 2.33;
-	text-align: center;
-	color: #414042;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.33;
+  text-align: center;
+  color: #414042;
 }
 
 .hackathon .logo-gutter {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
+
 /* Speakers */
+
 .speakers {
-	min-height: 650px;
-    background-color: #272727;
-    margin-top: 20px;
+  min-height: 650px;
+  background-color: #272727;
+  margin-top: 20px;
 }
 
 .speakers .title-gutter {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 .speakers .title {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 48px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: center;
-	color: #ffd41d;
-	text-transform: uppercase
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffd41d;
+  text-transform: uppercase
 }
 
 .speakers .speaker-gutter-top {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
-.speakers .view_all{
-    font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	letter-spacing: -0.3px;
-	text-align: left;
-	color: #ffd41d;
-    margin-top: 20px;
-	margin-bottom: 40px;
+.speakers .view_all {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #ffd41d;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
+
 
 /* Sponsors */
+
 .sponsors {
-	min-height: 300px;
+  min-height: 300px;
 }
 
 .sponsors .title-gutter {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 .sponsors .title {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 48px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: center;
-	color: #000000;
-	text-transform: uppercase
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase
 }
 
 .sponsors .logo-gutter {
-	margin-top: 60px;
-	line-height: 60px;
+  margin-top: 60px;
+  line-height: 60px;
 }
 
 .sponsors .hr-gutter {
-	margin-top: 70px;
+  margin-top: 70px;
 }
 
 .sponsors hr {
-	height: 1px;
-	background-color: #e2e2e2;
+  height: 1px;
+  background-color: #e2e2e2;
 }
 
+
 /* Partners */
+
 .partners {
-	min-height: 300px;
+  min-height: 300px;
 }
 
 .partners .title-gutter {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 .partners .title {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 48px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: center;
-	color: #000000;
-	text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .partners .logo-gutter {
-	margin-top: 60px;
-	line-height: 62px;
+  margin-top: 60px;
+  line-height: 62px;
 }
 
+
 /* Schedule */
+
 .schedule {
-	min-height: 1300px;
-	background-color: #272727;
-	margin-top: 70px;
+  min-height: 1300px;
+  background-color: #272727;
+  margin-top: 70px;
 }
 
 .schedule .title-gutter {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 .schedule .title {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 48px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: center;
-	color: #ffd41d;
-	text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffd41d;
+  text-transform: uppercase;
 }
 
 .schedule .subtitle-gutter {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 .schedule .subtitle {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.33;
-	text-align: center;
-	color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
 }
 
 .schedule .tab-gutter {
-	margin-top: 60px;
+  margin-top: 60px;
 }
 
 .schedule .tab {
-	width: 295px;
-	height: 124px;
-	background-color: #ffd41d;
+  width: 295px;
+  height: 124px;
+  background-color: #ffd41d;
 }
 
 .schedule .tab .date {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 48px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.5;
-	text-align: center;
-	color: #000000;
-	text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .schedule .tab .day {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 24px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: center;
-	color: #000000;
-	text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .schedule .schedule-content {
-	min-height: 735px;
-	margin-top: 30px;
-	background-color: #ffd41d;
-	padding-bottom: 21px;
+  min-height: 735px;
+  margin-top: 30px;
+  background-color: #ffd41d;
+  padding-bottom: 21px;
 }
 
 .schedule .schedule-item-icon {
-	width: 84px;
-	height: 84px;
-	border: 1px;
-	border-radius: 100%;
-	margin-top: 21px;
+  width: 84px;
+  height: 84px;
+  border: 1px;
+  border-radius: 100%;
+  margin-top: 21px;
 }
 
 .schedule .schedule-item-text-holder {
-	background-color: #ffffff;
-    min-height: 84px;
-    margin-top: 21px;
-    margin-left: 40px;
-    border-radius: 5px;
-    padding-bottom: 7px;
+  background-color: #ffffff;
+  min-height: 84px;
+  margin-top: 21px;
+  margin-left: 40px;
+  border-radius: 5px;
+  padding-bottom: 7px;
 }
 
 .schedule .complete-schedule {
-  	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	letter-spacing: -0.3px;
-	text-align: right;
-	color: #ffd41d;
-	margin-top: 30px;
-	margin-bottom: 105px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.3px;
+  text-align: right;
+  color: #ffd41d;
+  margin-top: 30px;
+  margin-bottom: 105px;
 }
 
 .schedule .time-box {
-	line-height: 30px;
+  line-height: 30px;
 }
 
 .schedule .time-icon {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .schedule .time-icon img {
-	height: 20px;
-    width: 20px;
+  height: 20px;
+  width: 20px;
 }
 
 .schedule .time {
-	font-family: 'Roboto Mono', monospace;
-    font-size: 18px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.17;
-    text-align: left;
-    color: #3aaece;
-    margin-left: 3px;
-    vertical-align: middle;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  text-align: left;
+  color: #3aaece;
+  margin-left: 3px;
+  vertical-align: middle;
 }
 
 .schedule .schedule-content .title {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.17;
-	text-align: left;
-	color: #000000;
-	text-transform: uppercase;
-	margin-left: 27px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  margin-left: 27px;
 }
 
 .schedule .schedule-content .speaker-name {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.5;
-	text-align: left;
-	color: #3aaece;
-	margin-left: 27px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  text-align: left;
+  color: #3aaece;
+  margin-left: 27px;
 }
 
 .schedule .schedule-content .speaker-bio {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.43;
-	text-align: left;
-	color: #7e9099;
-	margin-left: 27px;
-	margin-top: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  text-align: left;
+  color: #7e9099;
+  margin-left: 27px;
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar .nav {
+    background: #ffd527;
+  }
+  .navbar-collapse a {
+    color: #ffffff !important;
+  }
+  .jschannel-logo {
+    margin-top: 0px !important;
+    margin-left: -15px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+	.details-phone {
+		font-size: 16px;
+		padding: 30px;
+	}
+  .details-phone .details-phone-row {
+    margin-bottom: 10px;
+		height: 80px;
+    text-align: left;
+  }
+	.details-phone .phone-ico img {
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-collapse a {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .button-buy-ticket span {
+    width: 83px;
+    height: 17px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #231f20;
+  }
+  .button-buy-ticket {
+    width: 135px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #ffd527;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .jumbotron {
+    margin-bottom: 0px;
+		min-height: auto;
+  }
 }
 
 @media screen and (max-width: 506px) {
