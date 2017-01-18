@@ -15,12 +15,6 @@
   	text-transform: uppercase;
 }
 
-@media screen and (max-width: 992px) {
-	.contact {
-		height: 60px;
-	}
-}
-
 .contactrow {
   	margin-top: 80px;
 }
@@ -46,4 +40,17 @@
 	line-height: 2.22;
 	text-align: left;
 	color: #ff6c00;
+}
+
+@media screen and (max-width: 767px) {
+	.contactrow {
+    margin-top: 20px;
+	}
+	.contact {
+		height: 60px;
+		font-size: 30px;
+	}
+	.copyright {
+		font-size: 12px;
+	}
 }

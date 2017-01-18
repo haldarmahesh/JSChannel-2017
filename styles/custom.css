@@ -102,11 +102,9 @@
 }
 
 .jumbotron {
-    min-height: 650px;
-    background-image: url(../assets/landing-image.jpg);
-    background-size: 100% 650px;
-	background-repeat: round;
-    padding-top: 0px;
+  background: url(../assets/landing-image.jpg) center / cover no-repeat;
+  padding-top: 0px;
+  height: 100vh;
 }
 
 .jschannel-logo{
@@ -141,7 +139,7 @@
 }
 
 .jumbotron .sponser {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .details-phone {
@@ -348,12 +346,12 @@
 }
 
 .gallery-phone .gallery-text-gutter {
-	margin: 100px 0;
+	margin: 50px 0;
 }
 
 .gallery .gallery-container {
 	line-height: 400px;
-	margin-top: 30px; 
+	margin-top: 30px;
 }
 
 .gallery .small-image-container {
@@ -719,4 +717,41 @@
 	color: #7e9099;
 	margin-left: 27px;
 	margin-top: 18px;
+}
+
+@media screen and (max-width: 506px) {
+  .description .description_box {
+    margin-top: 30px;
+  }
+  .description_content {
+    padding: 5% 15%;
+  }
+  .description .heading {
+    font-size: 30px;
+  }
+  .description .subtitle {
+    font-size: 15px;
+    margin-top: 50px;
+  }
+	#tickets .buy-tickets {
+		font-size: 30px;
+	}
+	#tickets .buy-tickets-col, #tickets .price-btn {
+		margin-top: 30px;
+	}
+	#tickets .tickets-types-col {
+		margin-top: 40px;
+	}
+	#tickets .text {
+		margin-bottom: 10px;
+	}
+	#tickets .price-box {
+		width: 180px;
+		height: 80px;
+		background-size: cover;
+		line-height: 80px;
+	}
+	#tickets .price-text {
+		font-size: 35px;
+	}
 }

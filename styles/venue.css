@@ -1,10 +1,10 @@
 .venue {
-    min-height: 650px;
+    /*min-height: 500px;*/
     margin-top: 70px;
 }
 
 #map {
-    min-height: 650px;
+    min-height: 500px;
 }
 
 .venue-title {
@@ -52,15 +52,24 @@
 }
 
 .venue-details {
-    min-height: 650px;
-	background-image: url(../assets/j-w-m-blore.png);
-    background-size: 100% 100%;
-    background-repeat: round;
+    min-height: 500px;
+	  background: url(../assets/j-w-m-blore.png) 100%/cover no-repeat;
 }
 
 @media screen and (max-width: 767px) {
+  .venue-title-gutter, .venue-hotel-gutter {
+    margin: 5px;
+  }
+  .venue-title-gutter span, .venue-hotel-gutter span{
+    font-size: 30px;
+  }
+  .venue-address {
+    font-size: 15px;
+    margin: 5px;
+  }
 	.venue-details {
-		min-height: 650px;
+    min-height: 200px;
+    height: 35vh;
 		background-image: url(../assets/Img_hotel_mobile.jpg);
 		background-size: 100% 100%;
 		background-repeat: round;
