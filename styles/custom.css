@@ -276,6 +276,62 @@
 
 /* Gallery */
 
+.gallery .gallery-image {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery-image.image-1 {
+  background: url('.././assets/gallery/1.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-2 {
+  background: url('.././assets/gallery/2.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-3 {
+  background: url('.././assets/gallery/3.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-4 {
+  background: url('.././assets/gallery/4.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-5 {
+  background: url('.././assets/gallery/5.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-6 {
+  background: url('.././assets/gallery/6.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-7 {
+  background: url('.././assets/gallery/7.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-8 {
+  background: url('.././assets/gallery/8.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-9 {
+  background: url('.././assets/gallery/9.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-10 {
+  background: url('.././assets/gallery/10.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-11 {
+  background: url('.././assets/gallery/11.jpg') center 100%/cover no-repeat;
+}
+
+.gallery-image.image-12 {
+  background: url('.././assets/gallery/12.jpg') center 100%/cover no-repeat;
+}
+.gallery-gutter-bottom div div {
+  height: 350px;
+}
+
 .gallery {
   margin-top: 100px;
 }
@@ -861,5 +917,8 @@
   }
   footer .contactus {
     min-height: 230px;
+  }
+  .gallery-gutter-bottom div div {
+    height: 150px;
   }
 }
