@@ -12,12 +12,29 @@
 	font-stretch: normal;
 	text-align: left;
 	color: #ffd41d;
-  	text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 992px) {
+	.contact {
+		height: 60px;
+	}
+
 }
 
 .contactrow {
   	margin-top: 80px;
 }
+
+@media screen and (max-width: 767px) {
+
+	.contactrow {
+	  	margin-top:30px;
+	}
+
+}
+
 
 .numbers {
 	font-family: 'Open Sans', sans-serif;
@@ -42,6 +59,13 @@
 	color: #ff6c00;
 }
 
+.contact_icon{
+	height: 38px;
+	width: 38px;
+	margin-right: 20px;
+}
+
+
 @media screen and (max-width: 767px) {
 	.contactrow {
     margin-top: 20px;
@@ -52,5 +76,8 @@
 	}
 	.copyright {
 		font-size: 12px;
+	}
+	.contact_icon{
+		margin-right: 5px;
 	}
 }
