@@ -1,77 +1,84 @@
 .venue {
-    /*min-height: 500px;*/
-    margin-top: 70px;
+  /*min-height: 500px;*/
+  margin-top: 30px;
 }
 
 #map {
-    min-height: 500px;
+  min-height: 500px;
 }
 
 .venue-title {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 48px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	text-align: left;
-	color: #ffd41d;
-    text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .venue-title-gutter {
-    margin-top: 100px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .venue-hotel {
-	font-family: 'Open Sans', sans-serif;;
-	font-size: 48px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.08;
-	text-align: left;
-	color: #ffffff;
-    text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  ;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.08;
+  text-align: left;
+  color: #ffffff;
 }
 
 .venue-hotel-gutter {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .venue-address {
-    font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.33;
-	text-align: left;
-	color: #ffffff;
-    text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  text-align: left;
+  color: #ffffff;
 }
 
 .venue-details {
-    min-height: 500px;
-	  background: url(../assets/j-w-m-blore.png) 100%/cover no-repeat;
+  min-height: 500px;
+  background: url(../assets/j-w-m-blore.png) 100%/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
-  .venue-title-gutter, .venue-hotel-gutter {
+  .venue-hotel-gutter {
     margin: 5px;
   }
-  .venue-title-gutter span, .venue-hotel-gutter span{
+  .venue-hotel-gutter span {
+    font-size: 25px;
+  }
+  .venue-title-gutter span {
     font-size: 30px;
   }
   .venue-address {
     font-size: 15px;
     margin: 5px;
   }
-	.venue-details {
+  .venue-details {
     min-height: 200px;
     height: 35vh;
-		background-image: url(../assets/Img_hotel_mobile.jpg);
-		background-size: 100% 100%;
-		background-repeat: round;
-	}
+    background-image: url(../assets/Img_hotel_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #map {
+    min-height: 55vh;
+  }
 }
