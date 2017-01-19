@@ -360,6 +360,12 @@
 .gallery .img-height-190 {
   height: 190px;
 }
+.container-margin-top {
+  margin-top: 60px;
+}
+.container-margin-bottom {
+  margin-bottom: 100px;
+}
 
 .gallery .gallery-text, .gallery-phone .gallery-text {
   font-family: 'Open Sans', sans-serif;
@@ -478,13 +484,16 @@
   margin-top: 25px;
 }
 
-
+.speakers .subtitle {
+  color: white;
+}
 /* Speakers */
 
 .speakers {
   min-height: 650px;
   background-color: #272727;
   color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .speakers .title-gutter {
