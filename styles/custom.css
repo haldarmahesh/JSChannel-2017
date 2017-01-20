@@ -479,7 +479,9 @@
 .hackathon .sponsored-gutter {
   margin-top: 15px;
 }
-
+.bio h3 {
+  color: #ffd41d;
+}
 .hackathon .sponsored {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
