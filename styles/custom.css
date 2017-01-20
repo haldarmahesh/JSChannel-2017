@@ -162,6 +162,11 @@
   margin: 20px auto 0;
 }
 
+.jumbotron .links .cfp.disabled {
+  pointer-events: none;
+  background-color: rgba(154,127,13, 0.8);
+}
+
 .jumbotron .links .cfp .text {
   font-family: 'Fjalla One', sans-serif;
   font-size: 28px;
@@ -170,7 +175,14 @@
   font-stretch: normal;
   text-align: left;
   color: #000;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron .links .cfp .text .small-text {
+  font-size: 12px;
+  margin-left: 10px;
 }
 
 .jumbotron .recap {
@@ -859,9 +871,18 @@
 		height: 50px;
 		z-index: 5;
   }
+  .jumbotron .container {
+    height: 100%;
+  }
+  .jumbotron .links {
+    margin-top: 30px;
+  }
 	.jumbotron .links  .cfp {
     margin-top: 30px;
 	}
+  .jumbotron .links  .cfp .text {
+    font-size: 20px;
+  }
 	.details-phone {
 		font-size: 16px;
     margin-top: 100px;
