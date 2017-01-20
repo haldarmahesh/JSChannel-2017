@@ -1,0 +1,47 @@
+.banner {
+  background: black url("../images/the-ritz-carlton.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.banner .link {
+  font-size: 15px;
+  font-family: 'Fjalla One';
+}
+
+.banner .link-banner {
+  display: block;
+  color: #ffd41d;
+  margin-top: 5px;
+}
+
+.banner .link-banner-btn {
+  font-size: 25px;
+  padding: 10px 30px 10px 30px;
+  color: #ffd41d;
+  border-color: #ffd41d;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.banner .landing {
+  height: 400px;
+  margin-left: 50px;
+  position: relative;
+}
+
+.banner .landing_btn {
+  position: absolute;
+  margin-top: 200px;
+  text-transform: uppercase;
+}
+
+.banner .landing_links {
+  margin-top: 250px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhbm5lci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBRUUsa0VBQWlFO0VBQ2pFLHVCQUF1QjtFQUN2QixjQUFjO0VBQ2QsYUFBYTtFQUNiLG1CQUFtQjtDQW1EcEI7O0FBekREO0VBV0ksZ0JBQWU7RUFDZiwwQkFBMEI7Q0FDM0I7O0FBYkg7RUFpQkcsZUFBZTtFQUNmLGVBcEJvQjtFQXFCcEIsZ0JBQWdCO0NBQ2hCOztBQXBCSDtFQXdCRyxnQkFBZ0I7RUFDaEIsNkJBQTZCO0VBQzdCLGVBNUJvQjtFQTZCcEIsc0JBN0JvQjtFQThCcEIsb0JBQW9CO0VBQ3BCLGtCQUFrQjtFQUNsQixtQkFBbUI7Q0FDbkI7O0FBL0JIO0VBbUNFLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsbUJBQW1CO0NBQ3BCOztBQXRDRDtFQTJDQSxtQkFBbUI7RUFDbkIsa0JBQWlCO0VBQ2pCLDBCQUEwQjtDQUN6Qjs7QUE5Q0Q7RUFrREUsa0JBQWtCO0VBQ2xCLG1CQUFtQjtDQUNwQiIsImZpbGUiOiJiYW5uZXIuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiJHByaW1hcnljb2xvciA6ICNmZmQ0MWQ7XG5cbi5iYW5uZXJcbntcbiAgYmFja2dyb3VuZDogYmxhY2sgdXJsKCcuLi9pbWFnZXMvdGhlLXJpdHotY2FybHRvbi5qcGcnKSBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGhlaWdodDogMTAwdmg7XG4gIHdpZHRoOiAxMDB2dztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuXG5cbiAgLmxpbmtcbiAge1xuICAgIGZvbnQtc2l6ZToxNXB4O1xuICAgIGZvbnQtZmFtaWx5OiAnRmphbGxhIE9uZSc7XG4gIH1cblxuICAubGluay1iYW5uZXJcbiAge1xuICAgZGlzcGxheTogYmxvY2s7XG4gICBjb2xvcjogJHByaW1hcnljb2xvcjtcbiAgIG1hcmdpbi10b3A6IDVweDtcbiAgfVxuXG4gIC5saW5rLWJhbm5lci1idG5cbiAge1xuICAgZm9udC1zaXplOiAyNXB4O1xuICAgcGFkZGluZzogMTBweCAzMHB4IDEwcHggMzBweDtcbiAgIGNvbG9yOiAkcHJpbWFyeWNvbG9yO1xuICAgYm9yZGVyLWNvbG9yOiAkcHJpbWFyeWNvbG9yO1xuICAgYm9yZGVyLXN0eWxlOiBzb2xpZDtcbiAgIGJvcmRlci13aWR0aDogMXB4O1xuICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICB9XG5cbi5sYW5kaW5nXG57XG4gIGhlaWdodDogNDAwcHg7XG4gIG1hcmdpbi1sZWZ0OiA1MHB4O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG5cblxuLmxhbmRpbmdfYnRuXG57XG5wb3NpdGlvbjogYWJzb2x1dGU7XG5tYXJnaW4tdG9wOjIwMHB4O1xudGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbn1cblxuLmxhbmRpbmdfbGlua3NcbntcbiAgbWFyZ2luLXRvcDogMjUwcHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbn1cblxuXG5cblxufVxuIl19 */
