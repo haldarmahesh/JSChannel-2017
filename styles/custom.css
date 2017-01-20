@@ -482,6 +482,9 @@
 .bio h3 {
   color: #ffd41d;
 }
+.bio {
+  word-wrap: break-word;
+}
 .hackathon .sponsored {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
