@@ -1,3 +1,9 @@
+a:link {
+  color: #FED14A;
+}
+a:visited {
+  color: #e2c775;
+}
 .text-center {
   text-align: center;
 }
