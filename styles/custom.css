@@ -65,6 +65,7 @@ a:visited {
 	min-height: 650px;
   height: 100vh;
   max-height: 960px;
+  margin-bottom: 0px;
 }
 
 .jschannel-logo {
