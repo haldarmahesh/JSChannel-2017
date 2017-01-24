@@ -17,6 +17,9 @@ a:visited {
   /*max-height: 100%;*/
 }
 
+.price-box .disabled {
+    color: gray;
+  }
 
 /* Navbar Section */
 
@@ -266,7 +269,6 @@ a:visited {
   font-stretch: normal;
   line-height: 3.36;
   text-align: center;
-  color: #000000;
   line-height: normal;
   vertical-align: middle;
 }
