@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="javascript,jschannel,javascript conference, Bengaluru,community,conference,NCR,jsconference,angularJS,nodeJS,angularjs,emberjs,ecmascript,iojs,hapijs,expressjs">
+    <meta name="author" content="Pranam, Prakhar, Vatsalya, Himanshu Singh, Mahesh Haldar">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#FFD527">
+    <meta name="msapplication-navbutton-color" content="#FFD527">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="JSChannel Conference brings together JavaScript Enthusiasts from across the world.This July (28-29th), join us for a 2-day conference in Bengaluru">
+    <meta property="og:title" content="JSChannel Conference 2017">
+    <meta property="og:url" content="http://2017.jschannel.com">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="JSChannel Conference brings together JavaScript Enthusiasts from across the world.This July (28-29th), join us for a 2-day conference in Bengaluru">
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/822154908711292928/SRRFsZPO.jpg">
+    <meta property="og:twitter" content="@js_channel">
+    <meta property="og:site" content="@js_channel">
+    <meta property="og:author" content="JSChannel">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../fav-icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans|Roboto+Mono" rel="stylesheet">
+</head>
+
+<style>
+    html,
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    a:link {
+        color: #FED14A;
+    }
+
+    a:visited {
+        color: #e2c775;
+    }
+
+    .jumbotron {
+        height: 290px;
+        background: #000 url(../assets/landing-image.jpg) center / cover no-repeat;
+        box-shadow: inset 0 0 200px 15px #000;
+        padding: 50px 0px;
+        color: white;
+        margin: 0px;
+    }
+
+    .centerText {
+        text-align: center;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .welcomeMessage h2 {
+        /*border: 1px dashed #ffd527;*/
+        font-weight: bold;
+    }
+
+    .primaryColor,
+    .speaker h3 {
+        color: #ffd527;
+    }
+
+    .baseColor {
+        color: #263238
+    }
+
+    .whiteColor {
+        color: white;
+    }
+
+    .welcomeContainer {
+        overflow: auto;
+        background-color: #FFD31D;
+    }
+
+    .containerPadding {
+        padding: 20px;
+    }
+
+    .speakerContainer {
+        background-color: #263238;
+    }
+
+    .darkBg {
+        background-color: #263238;
+    }
+
+    .speakerContainer h2 {
+        text-align: center;
+    }
+
+    .bookContainer {
+        background-color: #FFD31D;
+        text-align: center;
+    }
+
+    footer {
+        padding: 50px;
+    }
+
+    .social-icons .facebook {
+        overflow: hidden;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MDAiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU1Mi4zNjIxOCkiPjxyZWN0IGhlaWdodD0iNTAwIiBpZD0icmVjdDM3NTgtMSIgcng9IjI1MCIgcnk9IjI1MCIgc3R5bGU9ImZpbGw6IzQ1NjE5ZDtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZSIgd2lkdGg9IjUwMCIgeD0iMCIgeT0iNTUyLjM2MjE4Ii8+PHBhdGggZD0iTSAyODkuNjg3NSA2MCBDIDIyMS45MDMxNyA2MCAxOTkuNTMxMjUgOTEuMTAwNTcgMTk5LjUzMTI1IDE0NC40Mzc1IEwgMTk5LjUzMTI1IDE4Ni42NTYyNSBMIDE1NSAxODYuNjU2MjUgTCAxNTUgMjUwLjAzMTI1IEwgMTk5LjUzMTI1IDI1MC4wMzEyNSBMIDE5OS41MzEyNSA0NDAgTCAyODEuNjU2MjUgNDQwIEwgMjgxLjY1NjI1IDI1MC4wMzEyNSBMIDMzNy40Njg3NSAyNTAuMDMxMjUgTCAzNDQuOTY4NzUgMTg2LjY1NjI1IEwgMjgxLjY1NjI1IDE4Ni42NTYyNSBMIDI4MS42NTYyNSAxNDkgQyAyODEuNjU2MjUgMTMxLjk3OTY2IDI4NS4zOTE0OCAxMjMuMzQzNzUgMzExLjgxMjUgMTIzLjM0Mzc1IEwgMzQ0Ljk2ODc1IDEyMy4zNDM3NSBMIDM0NC45Njg3NSA2MCBMIDI4OS42ODc1IDYwIHogIiBpZD0icmVjdDI5ODktMSIgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCw1NTIuMzYyMTgpIi8+PC9nPjwvc3ZnPg==');
+        background-size: cover;
+    }
+
+    .social-icons .linkedin {
+        overflow: hidden;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ4IDQ4IiBpZD0iTGF5ZXJfMSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNDggNDgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIGZpbGw9IiMxNjg2QjAiIHI9IjI0Ii8+PHBhdGggZD0iTTE3LjQsMzQuOWgtNC42VjIwLjFoNC42VjM0Ljl6IE0xNC45LDE4LjJMMTQuOSwxOC4yYy0xLjcsMC0yLjgtMS4xLTIuOC0yLjZjMC0xLjUsMS4xLTIuNiwyLjgtMi42ICBjMS43LDAsMi44LDEuMSwyLjgsMi42QzE3LjcsMTcuMSwxNi43LDE4LjIsMTQuOSwxOC4yeiBNMzUuOSwzNC45aC01LjN2LTcuN2MwLTItMC44LTMuNC0yLjYtMy40Yy0xLjQsMC0yLjEsMC45LTIuNSwxLjggIGMtMC4xLDAuMy0wLjEsMC44LTAuMSwxLjJ2OGgtNS4yYzAsMCwwLjEtMTMuNiwwLTE0LjhoNS4ydjIuM2MwLjMtMSwyLTIuNSw0LjYtMi41YzMuMywwLDUuOSwyLjEsNS45LDYuN1YzNC45eiIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==');
+        background-size: cover;
+    }
+
+    .social-icons .twitter {
+        overflow: hidden;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MDAiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU1Mi4zNjIxOCkiPjxyZWN0IGhlaWdodD0iNTAwIiBpZD0icmVjdDI5OTAtMSIgcng9IjI1MCIgcnk9IjI1MCIgc3R5bGU9ImZpbGw6IzU1YWNlZTtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZSIgd2lkdGg9IjUwMCIgeD0iMCIgeT0iNTUyLjM2MjE4Ii8+PGcgaWQ9ImxheWVyMS05IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTQ5LjAwNTE1LDgwLjI5NDM3MikiLz48ZyBpZD0ibGF5ZXIxLTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01NzUuNzE0MjksMzkuOTk5OTk5KSIvPjxnIGlkPSJsYXllcjEtOTMiIHRyYW5zZm9ybT0ibWF0cml4KDAuOTk5Mjg5NDUsMCwwLDAuOTk5Mjg5NDUsNDc0LjcwMDIsLTQwLjgxOTI4KSIvPjxwYXRoIGQ9Im0gMzA5Ljg1LDY3Mi4zMTIxOCBjIC0zNS40NzA3OSwwLjg5ODc5IC02My45MjUsMjkuOTMxMzggLTYzLjkyNSw2NS42MjUgMCw1LjEzODI3IDAuNTUxMjIsMTAuMTYxNTYgMS42NzUsMTQuOTc1IC01NC41NjU2NywtMi43NDEyNiAtMTAyLjk0Mjg3LC0yOC44Nzc0OSAtMTM1LjMyNSwtNjguNiAtNS42NTE0Nyw5LjY5MTkxIC04LjksMjAuOTgxNTggLTguOSwzMy4wMjUgMCwyMi43NzQ2NyAxMS42MDgwOSw0Mi44NTQzOCAyOS4yMjUsNTQuNjI1IC0xMC43NTcyMiwtMC4zNDQyOCAtMjAuODk2MDYsLTMuMzA3NTggLTI5Ljc1LC04LjIyNSAtMC4wMDUsMC4yNzI4MiAwLDAuNTcwNjkgMCwwLjg1IDAsMzEuODA0MDIgMjIuNjM3OSw1OC4zMDg4IDUyLjY3NSw2NC4zNSAtNS41MDg1MiwxLjQ5NDA2IC0xMS4zMTA3NSwyLjMgLTE3LjMsMi4zIC00LjIzNTM0LDAgLTguMzQyMDMsLTAuNDAxOTggLTEyLjM1LC0xLjE3NSA4LjM2MDIyLDI2LjA4MTA5IDMyLjU3NTA2LDQ1LjA3Mzg1IDYxLjMsNDUuNiAtMjIuNDY5MzcsMTcuNjEwNDMgLTUwLjczNTM0LDI4LjEgLTgxLjUsMjguMSAtNS4yOTQxNiwwIC0xMC41MzY3NSwtMC4yODkzOCAtMTUuNjc1LC0wLjkgMjkuMDYyNzIsMTguNjM2ODMgNjMuNTUyODIsMjkuNSAxMDAuNjI1LDI5LjUgMTIwLjc2NTUyLDAgMTg2LjgsLTEwMC4wNDA1OCAxODYuOCwtMTg2LjggMCwtMi44NDUyIC0wLjA1MTcsLTUuNzA1NzcgLTAuMTc1LC04LjUyNSAxMi44MjI5NCwtOS4yMzcyIDIzLjk1NDU0LC0yMC44MDc3NiAzMi43NSwtMzMuOTc1IC0xMS43NjQxLDUuMjI5MjIgLTI0LjQxNTg2LDguNzcxNDYgLTM3LjcsMTAuMzUgMTMuNTYzNDYsLTguMTE5OSAyMy45NzA2MSwtMjAuOTgxNjYgMjguODc1LC0zNi4zMjUgLTEyLjY4NjUyLDcuNTI4NzcgLTI2LjczOTkzLDEzLjAwMDg1IC00MS43LDE1Ljk1IC0xMS45NzE5NywtMTIuNzU3OTggLTI5LjA0MTM3LC0yMC43MjUgLTQ3LjkyNSwtMjAuNzI1IC0wLjU2NjQ2LDAgLTEuMTM2OTgsLTAuMDE0MyAtMS43LDAgeiIgaWQ9InJlY3QyOTg5IiBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lIi8+PC9nPjwvc3ZnPg==');
+        background-size: cover;
+    }
+
+    .social-icons .github {
+        overflow: hidden;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDY0IDY0IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iTGF5ZXJfMyI+PGc+PGc+PHBhdGggZD0iTTMyLjAwMSw2My4yNTFjLTE3LjIzLDAtMzEuMjUtMTQuMDItMzEuMjUtMzEuMjVzMTQuMDItMzEuMjUsMzEuMjUtMzEuMjVzMzEuMjUsMTQuMDIsMzEuMjUsMzEuMjUgICAgIFM0OS4yMzEsNjMuMjUxLDMyLjAwMSw2My4yNTF6IiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0iTTMyLDEuNWMxNi44MTgsMCwzMC41LDEzLjY4MiwzMC41LDMwLjVTNDguODE4LDYyLjUsMzIsNjIuNVMxLjUsNDguODE4LDEuNSwzMlMxNS4xODIsMS41LDMyLDEuNSBNMzIsMCAgICAgQzE0LjMyNywwLDAsMTQuMzI3LDAsMzJjMCwxNy42NzMsMTQuMzI3LDMyLDMyLDMyczMyLTE0LjMyNywzMi0zMkM2NCwxNC4zMjcsNDkuNjczLDAsMzIsMEwzMiwweiIgZmlsbD0iI0U1RTVFNSIvPjwvZz48L2c+PGc+PGcgaWQ9Ik91dGxpbmVfRmlsbGVkXzVfIj48cGF0aCBkPSJNMzguNTkyLDUwLjE2NmgtNC44NGgtNC44NDRjMCwwLDAuMDE0LTIuODc0LDAtNC44NDRjLTYuNjI5LDEuNDI4LTguNDc5LTMuNjMzLTguNDc5LTMuNjMzICAgICBjLTEuMjEtMi40MjMtMi40MjMtMy42MzMtMi40MjMtMy42MzNjLTIuNDIzLTEuNDM4LDAtMS4yMSwwLTEuMjFjMi40MjMsMCwzLjYzMywyLjQyMywzLjYzMywyLjQyMyAgICAgYzIuMTI2LDMuNjA5LDUuOTA4LDMuMDI4LDcuMjY2LDIuNDIzYzAtMS4yMSwwLjUzLTMuMDQyLDEuMjEtMy42MzNjLTUuMjktMC41OTUtOS42OTMtMy42MzMtOS42OTMtOS42ODkgICAgIHMxLjIxNi03LjI2NiwyLjQyNy04LjQ3OWMtMC4yNDQtMC41OTctMS4yNTktMi44MDUsMC4wMzctNi4wNTZjMCwwLDIuMzgsMCw0LjgwMywzLjYzM2MxLjItMS4yLDQuODQ0LTEuMjEsNi4wNTYtMS4yMSAgICAgYzEuMjA4LDAsNC44NTQsMC4wMSw2LjA1NCwxLjIxYzIuNDIzLTMuNjMzLDQuODA5LTMuNjMzLDQuODA5LTMuNjMzYzEuMjk2LDMuMjUxLDAuMjgyLDUuNDU5LDAuMDM3LDYuMDU2ICAgICBjMS4yMSwxLjIxLDIuNDIzLDIuNDIzLDIuNDIzLDguNDc5cy00LjM5Nyw5LjA5Mi05LjY4OSw5LjY4OWMwLjY4MiwwLjU5MSwxLjIxLDIuNjc1LDEuMjEsMy42MzNMMzguNTkyLDUwLjE2NkwzOC41OTIsNTAuMTY2eiIgZmlsbD0iIzMzMzMzMyIgaWQ9IkNhdF8xXyIvPjwvZz48L2c+PC9nPjwvc3ZnPg==');
+        background-size: cover;
+    }
+
+    .social-icons .youtube {
+        overflow: hidden;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIzMnB4IiBpZD0iWW91dHViZSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzIgMzI7IiB2ZXJzaW9uPSIxLjAiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkuRHJvcF94MDAyMF9TaGFkb3d7ZmlsbDpub25lO30KCS5Sb3VuZF94MDAyMF9Db3JuZXJzX3gwMDIwXzJfeDAwMjBfcHR7ZmlsbDojRkZGRkZGO3N0cm9rZTojMDAwMDAwO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KCS5MaXZlX3gwMDIwX1JlZmxlY3RfeDAwMjBfWHtmaWxsOm5vbmU7fQoJLkJldmVsX3gwMDIwX1NvZnR7ZmlsbDp1cmwoI1NWR0lEXzFfKTt9CgkuRHVza3tmaWxsOiNGRkZGRkY7fQoJLkZvbGlhZ2VfR1N7ZmlsbDojRkZERDAwO30KCS5Qb21wYWRvdXJfR1N7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojNDRBREUyO30KCS5zdDB7ZmlsbDojQkUxRTJEO30KCS5zdDF7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT48bGluZWFyR3JhZGllbnQgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJTVkdJRF8xXyIgeDE9Ii00NyIgeDI9Ii00Ni4yOTI5IiB5MT0iMCIgeTI9IjAuNzA3MSI+PHN0b3Agb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojREVERkUzIi8+PHN0b3Agb2Zmc2V0PSIwLjE3MzgiIHN0eWxlPSJzdG9wLWNvbG9yOiNEOEQ5REQiLz48c3RvcCBvZmZzZXQ9IjAuMzUyIiBzdHlsZT0ic3RvcC1jb2xvcjojQzlDQUNEIi8+PHN0b3Agb2Zmc2V0PSIwLjUzMjMiIHN0eWxlPSJzdG9wLWNvbG9yOiNCNEI1QjgiLz48c3RvcCBvZmZzZXQ9IjAuNzEzOSIgc3R5bGU9InN0b3AtY29sb3I6Izk4OUE5QyIvPjxzdG9wIG9mZnNldD0iMC44OTQ5IiBzdHlsZT0ic3RvcC1jb2xvcjojNzk3QzdFIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojNjU2QjZDIi8+PC9saW5lYXJHcmFkaWVudD48ZyBpZD0iWE1MSURfMl8iPjxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjE2IiBjeT0iMTUuOSIgaWQ9IlhNTElEXzg3NF8iIHI9IjE1LjEiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjEuNCwyMkgxMC42Yy0xLjYsMC0yLjktMS4zLTIuOS0yLjl2LTUuN2MwLTEuNiwxLjMtMi45LDIuOS0yLjloMTAuOGMxLjYsMCwyLjksMS4zLDIuOSwyLjkgICB2NS43QzI0LjMsMjAuNywyMywyMiwyMS40LDIyeiIgaWQ9IlhNTElEXzg2Nl8iLz48cG9seWdvbiBjbGFzcz0ic3QwIiBpZD0iWE1MSURfODY1XyIgcG9pbnRzPSIxOC43LDE2LjMgMTYuNCwxNy41IDE0LjEsMTguNyAxNC4xLDE2LjMgMTQuMSwxMy44IDE2LjQsMTUgICIvPjwvZz48L3N2Zz4=');
+        background-size: cover;
+    }
+
+    .social-icons .google {
+        overflow: hidden;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyOCAxMjgiIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB3aWR0aD0iMTI4cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxjaXJjbGUgY3g9IjY0IiBjeT0iNjQiIGZpbGw9IiNEOTUwMzIiIHI9IjY0Ii8+PGc+PGc+PHBhdGggZD0iTTQ5LjQyNCw5Ny44NzVjLTE5LjAxOCwwLTM0LjQ5MS0xNS4xOTMtMzQuNDkxLTMzLjg3NGMwLTE4LjY4LDE1LjQ3My0zMy44NzUsMzQuNDkxLTMzLjg3NSAgICAgYzguMzE4LDAsMTYuMzU0LDIuOTUyLDIyLjYyNCw4LjMwOWwtOC43NzEsOS44OTljLTMuODM4LTMuMjc5LTguNzU4LTUuMDg2LTEzLjg1My01LjA4NmMtMTEuNjUyLDAtMjEuMTMsOS4zMS0yMS4xMywyMC43NTIgICAgIGMwLDExLjQ0MSw5LjQ3OSwyMC43NSwyMS4xMywyMC43NWM5Ljg1OCwwLDE2LjMxMS00LjcyMywxOC40MDctMTMuMTk3SDQ5LjU4N1Y1OC40MzJoMzIuMzQ3djYuNTYyICAgICBDODEuOTM0LDg0LjY1OSw2OC44NjksOTcuODc1LDQ5LjQyNCw5Ny44NzV6IiBmaWxsPSIjRkZGRkZGIi8+PC9nPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTE3LjkzNCw1OC40MzggMTA3LjkzNCw1OC40MzggMTA3LjkzNCw0OC40MzggOTkuOTM0LDQ4LjQzOCA5OS45MzQsNTguNDM4IDg5LjkzNCw1OC40MzggICAgIDg5LjkzNCw2Ni40MzggOTkuOTM0LDY2LjQzOCA5OS45MzQsNzYuNDM4IDEwNy45MzQsNzYuNDM4IDEwNy45MzQsNjYuNDM4IDExNy45MzQsNjYuNDM4ICAgIi8+PC9nPjwvZz48L3N2Zz4=');
+        background-size: cover;
+    }
+
+    .social-icons .flickr {
+        overflow: hidden;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMC8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMtU1ZHLTIwMDEwOTA0L0RURC9zdmcxMC5kdGQnPjxzdmcgaGVpZ2h0PSIzMiIgc3R5bGU9Im92ZXJmbG93OnZpc2libGU7ZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMiAzMiIgdmlld0JveD0iMCAwIDMyIDMyIiB3aWR0aD0iMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxnIGlkPSJGbGlja3JfMl8iPjxnIGlkPSJGbGlja3JfMV8iPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIGlkPSJCR18xXyIgcj0iMTYiIHN0eWxlPSJmaWxsOiNFNkU2RTY7Ii8+PGcgaWQ9IkZsaWNrciI+PGNpcmNsZSBjeD0iMjEiIGN5PSIxNiIgaWQ9IlBpbmtfQ2lyY2xlIiByPSI0IiBzdHlsZT0iZmlsbDojRkY0MDgxOyIvPjxjaXJjbGUgY3g9IjExIiBjeT0iMTYiIGlkPSJCbHVlX0NpcmNsZSIgcj0iNCIgc3R5bGU9ImZpbGw6IzFFNDA4QTsiLz48L2c+PC9nPjwvZz48L2c+PC9zdmc+');
+        background-size: cover;
+    }
+
+    .social-icons {
+        text-align: end;
+    }
+
+    .social-icons .icon {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .bio {
+        word-wrap: break-word;
+    }
+
+    .contact_icon {
+        height: 38px;
+        width: 38px;
+        margin-right: 20px;
+    }
+
+    @media (max-width: 767px) {
+        .speaker .bio {
+            text-align: center;
+        }
+        .social-icons {
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="jumbotron centerText">
+            <div class="container link-container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <img class="jschannel-logo img-responsive" src="../assets/jschannel-logo.jpg" />
+                        <h2>28th & 29th July</h2>
+                        <h3>Bengaluru, India</h3>
+                    </div>
+                </div>
+    </header>
+    <div class="welcomeContainer containerPadding">
+        <div class="welcomeMessage centerText col-md-6 col-md-offset-3 ">
+            <h2 class="baseColor">Hey JS Enthusiasts, we are back!</h2>
+            <p class="baseColor">You made JS Channel 2016 Big<br/> We promise to make it Bigger in 2017!
+            </p>
+        </div>
+    </div>
+    <div class="speakerContainer containerPadding whiteColor">
+        <h2 class="primaryColor">Our Keynote speakers</h2>
+        <br/>
+        <div class="row">
+
+            <div class="speaker col-xs-12 col-md-4 col-sm-4">
+                <div class="col-md-6 col-md-offset-0 col-xs-offset-3 col-xs-6">
+                    <img src="../assets/preethi.jpeg" class="img-circle img-responsive">
+                </div>
+                <div class="bio col-md-6 col-xs-12">
+                    <h3>Preethi Kasireddy</h3>
+                    <p>Software Eng hacking on bots. </p>
+                    <p> Previously a16z and GoldmanSachs</p>
+                </div>
+                <div class="social-icons col-xs-12 col-md-12">
+                    <a href="https://www.linkedin.com/in/preethi-kasireddy-41383528/" target="_blank">
+                        <span class="icon linkedin"></span>
+                    </a>
+                    <a href="https://twitter.com/iam_preethi" target="_blank">
+                        <span class="icon twitter"></span>
+                    </a>
+                    <a href="https://github.com/iam-peekay" target="_blank">
+                        <span class="icon github"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="speaker col-xs-12 col-md-4 col-sm-4">
+                <div class="col-md-6 col-md-offset-0 col-xs-offset-3 col-xs-6">
+                    <img src="../assets/sarah.jpg" class="img-circle img-responsive">
+                </div>
+                <div class="bio col-md-6 col-xs-12">
+                    <h3>Sarah Drasner</h3>
+                    <p>Award-winning speaker, Consultant & Writer</p>
+                    <p>webanimationworkshops.com</p>
+                </div>
+                <div class="social-icons col-xs-12 col-md-12">
+                    <a href="https://www.linkedin.com/in/sarahdrasner/" target="_blank">
+                        <span class="icon linkedin"></span>
+                    </a>
+                    <a href="https://twitter.com/sarah_edo" target="_blank">
+                        <span class="icon twitter"></span>
+                    </a>
+                    <a href="https://github.com/sdras" target="_blank">
+                        <span class="icon github"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="speaker col-xs-12 col-md-4 col-sm-4">
+                <div class="col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-3">
+                    <img src="../assets/andrew.jpg" class="img-circle img-responsive">
+                </div>
+                <div class="bio col-md-6 col-sm-12 col-xs-12">
+                    <h3>Andrew Clark</h3>
+                    <p>Co-creator of Redux</p>
+                    <p>Facebook</p>
+                </div>
+                <div class="social-icons col-xs-12 col-md-12">
+                    <a href="https://twitter.com/acdlite" target="_blank">
+                        <span class="icon twitter"></span>
+                    </a>
+                    <a href="https://github.com/acdlite" target="_blank">
+                        <span class="icon github"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="speaker col-xs-12 col-md-4 col-sm-4">
+                <div class="col-md-6 col-md-offset-0 col-xs-offset-3 col-xs-6">
+                    <img src="../assets/franziska.jpg" class="img-circle img-responsive">
+                </div>
+                <div class="bio col-md-6 col-xs-12">
+                    <h3>Franziska Hinkelmann</h3>
+                    <p>Ph.D software engineer </p>
+                    <p>Chrome V8, Google</p>
+                </div>
+                <div class="social-icons col-xs-12 col-md-12">
+                    <a href="https://www.linkedin.com/in/fhinkel/" target="_blank">
+                        <span class="icon linkedin"></span>
+                    </a>
+                    <a href="https://twitter.com/fhinkel" target="_blank">
+                        <span class="icon twitter"></span>
+                    </a>
+                    <a href="https://github.com/fhinkel" target="_blank">
+                        <span class="icon github"></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bookContainer containerPadding">
+        <a href="http://2017.jschannel.com/#tickets" target="_blank"><button class="btn btn-lg btn-danger">BOOK YOUR TICKET NOW</button></a>
+    </div>
+    <footer class="darkBg whiteColor centerText">
+        <div class="row contactrow">
+            <p class="contact col-md-2 col-md-offset-1">Contact</p>
+            <p class="col-md-offset-2 col-md-4 col-sm-12 col-xs-12 numbers"><img src="../assets/contact_phone.svg" class="contact_icon"> <a href="tel:+919025328198">+91-90 2532 8198</a></p>
+            <p class=" col-md-offset-5 col-md-4 col-sm-12 col-xs-12 numbers"><img src="../assets/contact_mail.svg" class="contact_icon"><a href="mailto:info@jschannel.com?Subject=Hey%20JSChannel%20Team"> info@jschannel.com</a></p>
+        </div>
+        <div class="row">
+            <p class="col-md-5 col-md-offset-5 copyright primaryColor">Copyright © JSchannel 2013-2017</p>
+        </div>
+        <div class="row">
+            <h5>Follow us to keep updated yourself</h5>
+            <div class="social-icons col-xs-12 col-md-4">
+                <a href="https://www.facebook.com/javascriptchannel" target="_blank">
+                    <span class="icon facebook"></span>
+                </a>
+                <a href="https://twitter.com/js_channel/" target="_blank">
+                    <span class="icon twitter"></span>
+                </a>
+                <a href="https://plus.google.com/111069083279946389343/" target="_blank">
+                    <span class="icon google"></span>
+                </a>
+                <a href="http://confreaks.tv/events/jschannelconf2015" target="_blank">
+                    <span class="icon youtube"></span>
+                </a>
+                <a href="https://www.flickr.com/photos/100543192@N08/albums/with/72157656673572946" target="_blank">
+                    <span class="icon flickr"></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
