@@ -238,6 +238,10 @@ a:visited {
   margin-top: 100px;
 }
 
+.margin-tb10 {
+  margin: 10px 0;
+}
+
 .tickets .text {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
