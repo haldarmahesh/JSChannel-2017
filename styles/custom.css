@@ -17,6 +17,26 @@ a:visited {
   /*max-height: 100%;*/
 }
 
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.jwm-image-small {
+  background: url(../assets/j-w-m-blore.png) 100%/cover no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.map-infoWindow {
+  width: 100%;
+}
+
 .price-box .disabled {
     color: gray;
   }
@@ -240,6 +260,10 @@ a:visited {
 
 .margin-tb10 {
   margin: 10px 0;
+}
+
+.margin-lr10 {
+  margin: 0 10px;
 }
 
 .tickets .text {

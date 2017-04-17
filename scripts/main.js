@@ -15,4 +15,19 @@ function initMap() {
     map: map,
     title: 'JSChannel Conference'
   });
+
+  var infoWindow = new google.maps.InfoWindow({
+    content: '<div onclick="redirectMap()" class="flex-row map-infoWindow"><div class="jwm-image-small"></div><div class="flex-column margin-lr10"><h4>JSChannel Conference</h4><p>JW Marriott Hotel Bengaluru</p></div></div>',
+    maxWidth: 300
+  });
+
+  infoWindow.open(map, marker);
+
+  google.maps.event.addListener(marker, 'click', function () {
+    redirectMap();
+  });
+}
+
+var redirectMap = function () {
+  window.open('https://www.google.co.in/maps/place/JW+Marriott+Hotel+Bengaluru/@12.972006,77.5926823,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae1679c4616049:0x21e7060fdb88a82b!8m2!3d12.972006!4d77.594871', '_blank');
 }
