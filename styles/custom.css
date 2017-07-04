@@ -8,7 +8,7 @@ a:visited {
   text-align: center;
 }
 
-.visible {
+.hidden {
   display: none !important;
 }
 .img-responsive {
