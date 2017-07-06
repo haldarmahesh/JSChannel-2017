@@ -478,7 +478,7 @@
     </div>
   </div>
 
-  <div class="container-fluid schedule hidden">
+  <div class="container-fluid schedule">
     <div class="row">
       <div class="col-md-12 text-center title-gutter">
         <span class="title">Schedule</span>
@@ -490,14 +490,14 @@
       </div>
     </div>
     <div class="row tab-gutter">
-      <div class="col-md-offset-1 col-md-3 text-center">
-        <div class="tab">
+      <div class="col-md-3 text-center">
+        <div class="tab" onclick="toggleSchedule(1)">
           <div class="date">July 28</div>
           <div class="day">Day 1</div>
         </div>
       </div>
       <div class="col-md-3 text-center">
-        <div class="tab">
+        <div class="tab" onclick="toggleSchedule(2)">
           <div class="date">July 29</div>
           <div class="day">Day 2</div>
         </div>
@@ -505,7 +505,7 @@
     </div>
     <div class="row">
       <div class="col-md-offset-1 col-md-10">
-        <div class="schedule-content">
+        <div id="schedule-day1" class="schedule-content">
           <div class="row">
             <div class="col-md-offset-1 col-md-1 schedule-item-icon">
               <img src="assets/ico-schedule.png" alt="icon">
@@ -515,12 +515,12 @@
                 <span class="time-icon">
                     <img src="assets/clock.png" />
                   </span>
-                <span class="time">8:30 AM</span>
+                <span class="time">8:00 AM</span>
               </div>
               <div class="title"> Registration</div>
-              <div class="speaker-name">JS Channel</div>
-              <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
-                I will demonstrate In this talk I will demonstrate</div>
+              <!-- <div class="speaker-name">JS Channel</div> -->
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
             </div>
           </div>
           <div class="row">
@@ -532,12 +532,12 @@
                 <span class="time-icon">
                     <img src="assets/clock.png" />
                   </span>
-                <span class="time">8:30 AM</span>
+                <span class="time">9:15 AM</span>
               </div>
-              <div class="title"> Registration</div>
-              <div class="speaker-name">JS Channel</div>
-              <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
-                I will demonstrate In this talk I will demonstrate</div>
+              <div class="title"> Keynote</div>
+              <div class="speaker-name">Preethi Kasireddy</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
             </div>
           </div>
           <div class="row">
@@ -549,12 +549,12 @@
                 <span class="time-icon">
                     <img src="assets/clock.png" />
                   </span>
-                <span class="time">8:30 AM</span>
+                <span class="time">10:15 AM</span>
               </div>
-              <div class="title"> Registration</div>
-              <div class="speaker-name">JS Channel</div>
-              <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
-                I will demonstrate In this talk I will demonstrate</div>
+              <div class="title"> State maintenance with Redux in a multi layered Javascript Application</div>
+              <div class="speaker-name">Varsha Saha</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
             </div>
           </div>
           <div class="row">
@@ -566,12 +566,12 @@
                 <span class="time-icon">
                     <img src="assets/clock.png" />
                   </span>
-                <span class="time">8:30 AM</span>
+                <span class="time">10:45 AM</span>
               </div>
-              <div class="title"> Registration</div>
-              <div class="speaker-name">JS Channel</div>
-              <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
-                I will demonstrate In this talk I will demonstrate</div>
+              <div class="title"> Service Worker and The Role they Play in Modern-day Web Apps</div>
+              <div class="speaker-name">Mukul Jain</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
             </div>
           </div>
           <div class="row">
@@ -583,12 +583,12 @@
                 <span class="time-icon">
                     <img src="assets/clock.png" />
                   </span>
-                <span class="time">8:30 AM</span>
+                <span class="time">11:15 AM</span>
               </div>
-              <div class="title"> Registration</div>
-              <div class="speaker-name">JS Channel</div>
-              <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
-                I will demonstrate In this talk I will demonstrate</div>
+              <div class="title"> Tea Break</div>
+              <!-- <div class="speaker-name">JS Channel</div> -->
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
             </div>
           </div>
           <div class="row">
@@ -600,12 +600,320 @@
                 <span class="time-icon">
                     <img src="assets/clock.png" />
                   </span>
-                <span class="time">8:30 AM</span>
+                <span class="time">11:30 AM</span>
               </div>
-              <div class="title"> Registration</div>
-              <div class="speaker-name">JS Channel</div>
-              <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
-                I will demonstrate In this talk I will demonstrate</div>
+              <div class="title"> Building Cross Platform Desktop Applications Using Electron</div>
+              <div class="speaker-name">Rahul Rout</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">12:00 PM</span>
+              </div>
+              <div class="title"> Building applications for the next billion users</div>
+              <div class="speaker-name">Siddharth Kshetrapal</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">12:30 PM</span>
+              </div>
+              <div class="title"> Lunch</div>
+              <!-- <div class="speaker-name">Rahul Rout</div> -->
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">2:00 PM</span>
+              </div>
+              <div class="title"> Workshop</div>
+              <div class="speaker-name">Max Stoiber</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">4:00 PM</span>
+              </div>
+              <div class="title"> Tea Break</div>
+              <!-- <div class="speaker-name">Rahul Rout</div> -->
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">4:15 PM</span>
+              </div>
+              <div class="title"> Demand Driven Applications with GraphQL</div>
+              <div class="speaker-name">Vinci Rufus</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">4:45 PM</span>
+              </div>
+              <div class="title"> Keynote: Animating Vue</div>
+              <div class="speaker-name">Sarah</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">5:45 PM</span>
+              </div>
+              <div class="title"> Flash talk</div>
+              <!-- <div class="speaker-name">Rahul Rout</div> -->
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+        </div>
+        <div id="schedule-day2" class="schedule-content hidden">
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">9:15 AM</span>
+              </div>
+              <div class="title"> JavaScript engines - how do they even?</div>
+              <div class="speaker-name">Fransica</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">10:15 AM</span>
+              </div>
+              <div class="title"> Dealing with Data Offline in Web Apps</div>
+              <div class="speaker-name">Jai Santosh</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">10:45 AM</span>
+              </div>
+              <div class="title"> Building beautiful interfaces in React Native</div>
+              <div class="speaker-name">Sanket Sahu</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">11:15 AM</span>
+              </div>
+              <div class="title"> Tea Break</div>
+              <!-- <div class="speaker-name">Mukul Jain</div> -->
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">11:30 AM</span>
+              </div>
+              <div class="title"> Super-charged Developer Tools for React Native</div>
+              <div class="speaker-name">Parushram</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">12:00 PM</span>
+              </div>
+              <div class="title"> Open Web, Open Source, Open Communities</div>
+              <div class="speaker-name">Shubheksha</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">12:30 PM</span>
+              </div>
+              <div class="title"> Lunch</div>
+              <!-- <div class="speaker-name">Siddharth Kshetrapal</div> -->
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">2:00 PM</span>
+              </div>
+              <div class="title"> U&amp;I with React: On building modular, scalable and extendable UI components for you and I.</div>
+              <div class="speaker-name">Farhad</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">4:00 PM</span>
+              </div>
+              <div class="title"> Tea break</div>
+              <!-- <div class="speaker-name">Max Stoiber</div> -->
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">4:15 PM</span>
+              </div>
+              <div class="title"> Keynote</div>
+              <div class="speaker-name">Andrew</div>
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-1 schedule-item-icon">
+              <img src="assets/ico-schedule.png" alt="icon">
+            </div>
+            <div class="schedule-item-text-holder col-md-9">
+              <div class="time-box">
+                <span class="time-icon">
+                    <img src="assets/clock.png" />
+                  </span>
+                <span class="time">5:15 PM</span>
+              </div>
+              <div class="title"> Closure and Announcements</div>
+              <!-- <div class="speaker-name">Vinci Rufus</div> -->
+              <!-- <div class="speaker-bio">In this talk I will demonstrate In this talk I will demonstrate In this talk I will demonstrate In this talk
+                I will demonstrate In this talk I will demonstrate</div> -->
             </div>
           </div>
         </div>
