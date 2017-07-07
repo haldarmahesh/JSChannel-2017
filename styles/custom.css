@@ -725,7 +725,7 @@ a:visited {
   font-stretch: normal;
   text-align: center;
   color: #ffd41d;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .schedule .subtitle-gutter {
@@ -745,6 +745,8 @@ a:visited {
 
 .schedule .tab-gutter {
   margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .schedule .tab {
@@ -783,7 +785,13 @@ a:visited {
   padding-bottom: 21px;
 }
 
+.schedule .schedule-content >.row {
+  display: flex;
+  justify-content: center;
+}
+
 .schedule .schedule-item-icon {
+  display: none;
   width: 84px;
   height: 84px;
   border: 1px;
@@ -795,9 +803,10 @@ a:visited {
   background-color: #ffffff;
   min-height: 84px;
   margin-top: 21px;
-  margin-left: 40px;
+  /*margin-left: 40px;*/
   border-radius: 5px;
   padding-bottom: 7px;
+  width: 85%;
 }
 
 .schedule .complete-schedule {
@@ -848,7 +857,7 @@ a:visited {
   line-height: 1.17;
   text-align: left;
   color: #000000;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   margin-left: 27px;
 }
 
@@ -1091,4 +1100,18 @@ a:visited {
   .gallery-gutter-bottom div div {
     height: 150px;
   }
+  .schedule .tab {
+    width: 150px;
+    height: 100px;
+  }
+  .schedule .tab .date {
+    font-size: 30px;
+  }
+  .schedule .tab .day {
+    font-size: 20px;
+  }
+}
+
+.schedule .tab.active {
+  border: 3px solid #000000;
 }
