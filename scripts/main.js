@@ -34,9 +34,13 @@ var redirectMap = function () {
 
 var toggleSchedule = function (day) {
   if(day === 1) {
+    document.getElementById('button-day1').classList.add('active');
+    document.getElementById('button-day2').classList.remove('active');
     document.getElementById('schedule-day2').classList.add('hidden');
     document.getElementById('schedule-day1').classList.remove('hidden');
   } else {
+    document.getElementById('button-day2').classList.add('active');
+    document.getElementById('button-day1').classList.remove('active');
     document.getElementById('schedule-day1').classList.add('hidden');
     document.getElementById('schedule-day2').classList.remove('hidden');
   }
