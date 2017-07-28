@@ -66,12 +66,12 @@ a:visited {
   color: #ffd527 !important;
   vertical-align: middle;
   margin-left: 25px;
-	height: auto;
+  height: auto;
 }
 
 .navbar-nav>li>a {
-	line-height: normal;
-	padding: 10px 15px;
+  line-height: normal;
+  padding: 10px 15px;
 }
 
 .navbar-default .navbar-nav>li>a.button-buy-ticket:hover {
@@ -83,9 +83,9 @@ a:visited {
 
 .jumbotron {
   background: #000 url(../assets/landing-image.jpg) center / cover no-repeat;
-	box-shadow: inset 0 0 200px 15px #000;
-	padding: 0;
-	min-height: 650px;
+  box-shadow: inset 0 0 200px 15px #000;
+  padding: 0;
+  min-height: 650px;
   height: 100vh;
   max-height: 960px;
   margin-bottom: 0px;
@@ -112,21 +112,21 @@ a:visited {
 
 .details-phone .details-phone-row {
   margin-bottom: 50px;
-	height: 100px;
+  height: 100px;
 }
 
 .details-phone .phone-ico {
   padding: 0;
-	height: inherit;
+  height: inherit;
 }
 
 .details-phone .detail-row {
-	padding: 0;
+  padding: 0;
 }
 
 .details-phone .phone-ico img {
   height: 80%;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .details-phone .block {
@@ -430,12 +430,12 @@ a:visited {
 }
 
 .gallery-phone .gallery-text-gutter {
-	margin: 50px 0;
+  margin: 50px 0;
 }
 
 .gallery .gallery-container {
-	line-height: 400px;
-	margin-top: 30px;
+  line-height: 400px;
+  margin-top: 30px;
 }
 
 .gallery .small-image-container {
@@ -894,62 +894,62 @@ a:visited {
   .social-icons {
     text-align: center;
   }
-	.navbar {
-		height: 50px;
-		position: fixed;
+  .navbar {
+    height: 50px;
+    position: fixed;
     top: 0;
     z-index: 1;
-		background-color: #000;
-	}
+    background-color: #000;
+  }
   .navbar .nav {
     background: #ffd527;
-		margin: 0;
+    margin: 0;
   }
-	.navbar-collapse {
-		margin-top: 0;
-		padding: 0;
-		border: 0;
-	}
+  .navbar-collapse {
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+  }
   .navbar-collapse a {
     color: #ffffff !important;
   }
-	.navbar-nav>li>a {
-		line-height: normal;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-	}
-	.navbar-header .navbar-toggle.collapsed .icon-bar {
-		background-color: #ffd527;
-	}
-	.navbar-header .navbar-toggle .icon-bar {
-		background-color: #fff;
-		width: 25px;
-		height: 3px;
-	}
-	.navbar-default .navbar-toggle:focus {
-		background-color: #ffd527;
-	}
-	.navbar-default .navbar-toggle:hover {
-		background-color: transparent;
-	}
-	.navbar-default button.navbar-toggle:not(.collapsed) {
-		border: 0;
-		background-color: #ffd527;
-	}
-	.navbar-toggle.collapsed {
-		border: 0;
-	}
-	.link-container {
-		padding: 10px 40px;
-		box-sizing: border-box;
-	}
+  .navbar-nav>li>a {
+    line-height: normal;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .navbar-header .navbar-toggle.collapsed .icon-bar {
+    background-color: #ffd527;
+  }
+  .navbar-header .navbar-toggle .icon-bar {
+    background-color: #fff;
+    width: 25px;
+    height: 3px;
+  }
+  .navbar-default .navbar-toggle:focus {
+    background-color: #ffd527;
+  }
+  .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+  }
+  .navbar-default button.navbar-toggle:not(.collapsed) {
+    border: 0;
+    background-color: #ffd527;
+  }
+  .navbar-toggle.collapsed {
+    border: 0;
+  }
+  .link-container {
+    padding: 10px 40px;
+    box-sizing: border-box;
+  }
   .jschannel-logo {
-		display: block;
-		position: fixed;
-		top: 0;
-		left: 0;
-		margin-top: 0;
-		height: 50px;
-		z-index: 5;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    height: 50px;
+    z-index: 5;
   }
   .jumbotron .container {
     height: 100%;
@@ -957,24 +957,24 @@ a:visited {
   .jumbotron .links {
     margin-top: 30px;
   }
-	.jumbotron .links  .cfp {
+  .jumbotron .links  .cfp {
     margin-top: 30px;
-	}
+  }
   .jumbotron .links  .cfp .text {
     font-size: 20px;
   }
-	.details-phone {
-		font-size: 16px;
+  .details-phone {
+    font-size: 16px;
     margin-top: 100px;
-	}
+  }
   .details-phone .details-phone-row {
     margin-bottom: 10px;
-		height: 80px;
+    height: 80px;
     text-align: left;
   }
-	.details-phone .phone-ico img {
-		height: 50px;
-	}
+  .details-phone .phone-ico img {
+    height: 50px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1035,7 +1035,7 @@ a:visited {
 @media screen and (max-width: 992px) {
   .jumbotron {
     margin-bottom: 0px;
-		min-height: auto;
+    min-height: auto;
   }
 }
 
@@ -1053,28 +1053,28 @@ a:visited {
     font-size: 15px;
     margin-top: 50px;
   }
-	#tickets .buy-tickets {
-		font-size: 30px;
-	}
-	#tickets .buy-tickets-col, #tickets .price-btn {
-		margin-top: 30px;
-	}
-	#tickets .tickets-types-col {
-		margin-top: 40px;
-	}
-	#tickets .text {
-		margin-bottom: 10px;
-	}
-	#tickets .price-box {
-		width: 180px;
-		height: 80px;
-		background-size: cover;
-		line-height: 80px;
-	}
-	#tickets .price-text {
-		font-size: 35px;
-	}
-	.gallery-phone .gallery-text-gutter {
+  #tickets .buy-tickets {
+    font-size: 30px;
+  }
+  #tickets .buy-tickets-col, #tickets .price-btn {
+    margin-top: 30px;
+  }
+  #tickets .tickets-types-col {
+    margin-top: 40px;
+  }
+  #tickets .text {
+    margin-bottom: 10px;
+  }
+  #tickets .price-box {
+    width: 180px;
+    height: 80px;
+    background-size: cover;
+    line-height: 80px;
+  }
+  #tickets .price-text {
+    font-size: 35px;
+  }
+  .gallery-phone .gallery-text-gutter {
     margin: 25px 0;
   }
   .gallery-phone .gallery-text{
@@ -1116,4 +1116,14 @@ a:visited {
 .schedule .tab.active {
   border: 2px solid #ffffff;
   box-shadow: 0px 1px 1px 1px rgb(255, 255, 255);
+}
+
+.live-section {
+  position: fixed;
+  text-align: center;
+  color: white;
+  width: 100%;
+  background: #ED2425;
+  height: 40px;
+  z-index: 100000;
 }
