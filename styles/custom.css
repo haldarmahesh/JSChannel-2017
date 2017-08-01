@@ -1126,4 +1126,5 @@ a:visited {
   background: #ED2425;
   height: 40px;
   z-index: 100000;
+  padding-top: 5px;
 }
